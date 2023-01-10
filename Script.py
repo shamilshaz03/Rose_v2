@@ -215,6 +215,12 @@ By @{} """
 ◉ /pin :- 𝚃𝙾 𝙿𝙸𝙽 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃𝚂
 ◉ /unpin :- 𝚃𝙾 𝚄𝙽𝙿𝙸𝙽 𝚃𝙷𝙴 𝙲𝚄𝚁𝚁𝙴𝙴𝙽𝚃 𝙿𝙸𝙽𝙽𝙴𝙳 𝙼𝙴𝚂𝙰𝙰𝙶𝙴"""
 
+    NORSLTS = """
+★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
+𝗜𝗗 <b>: {}</b>
+𝗡𝗮𝗺𝗲 <b>: {}</b>
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
+
     PASTE_TXT = """Help: <b>Paste</b>
 
 Paste some texts or documents on a website!
