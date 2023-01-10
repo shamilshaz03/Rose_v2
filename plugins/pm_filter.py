@@ -217,7 +217,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 〄 {search} 〄 ', 'qinfo')
+            InlineKeyboardButton(f' 🎬〄 {search} 〄🎬 ', url=f"https://t.me/{temp.U_NAME}")
         ]
     )
     btn.insert(1, 
@@ -1347,7 +1347,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 〄 {search} 〄 ', 'qinfo')
+            InlineKeyboardButton(f' 🎬〄 {search} 〄🎬 ', url=f"https://t.me/{temp.U_NAME}")
         ]
     )
     btn.insert(1, 
@@ -1411,7 +1411,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_sticker(sticker="CAACAgUAAxkBAAJbO2OCFzf1DMSt3AjS0QMBXvrHNU6wAAJKBQACne-ZVo2980VFcXh4HgQ", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -1422,11 +1422,11 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_sticker("CAACAgUAAxkBAAJbO2OCFzf1DMSt3AjS0QMBXvrHNU6wAAJKBQACne-ZVo2980VFcXh4HgQ", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_sticker("CAACAgUAAxkBAAJbO2OCFzf1DMSt3AjS0QMBXvrHNU6wAAJKBQACne-ZVo2980VFcXh4HgQ", reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if spoll:
