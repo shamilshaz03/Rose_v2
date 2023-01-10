@@ -217,7 +217,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 🎬〄 {search} 〄🎬 ', url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton(f' 〄  {search}  〄 ', url=f"https://t.me/{temp.U_NAME}")
         ]
     )
     btn.insert(1, 
@@ -286,7 +286,7 @@ async def advantage_spoll_choker(bot, query):
             reqstr = await bot.get_users(reqstr1)
             if NO_RESULTS_MSG:
                 await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit(script.MVE_NT_FND)
             await asyncio.sleep(10)
             await k.delete()
 
@@ -310,7 +310,7 @@ async def pm_spoll_tester(bot, query):
         reqstr = await bot.get_users(reqstr1)
         if NO_RESULTS_MSG:
             await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
-        k = await query.message.edit('This Movie Not Found In DataBase')
+        k = await query.message.edit(script.MVE_NT_FND)
         await asyncio.sleep(10)
         await k.delete()
 
