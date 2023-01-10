@@ -1518,11 +1518,11 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_sticker(sticker="CAACAgUAAxkBAAJbO2OCFzf1DMSt3AjS0QMBXvrHNU6wAAJKBQACne-ZVo2980VFcXh4HgQ", reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
     else:
-        fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_sticker(sticker="CAACAgUAAxkBAAJbO2OCFzf1DMSt3AjS0QMBXvrHNU6wAAJKBQACne-ZVo2980VFcXh4HgQ",, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if spoll:
