@@ -848,16 +848,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "sinfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ Sʜᴀᴍɪʟ࿐", show_alert=True)      
 
-    elif query.data == "tinfo":
+    elif query.data == "ss":
         await query.answer("▣ ᴛɪᴘs ▣\n\n★ ᴛʏᴘᴇ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ (ɢᴏᴏɢʟᴇ)\n\n★ ɪғ ʏᴏᴜ ɴᴏᴛ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ ɪɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʜᴇ ɴᴇxᴛ sᴛᴇᴘ ɪs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ Sʜᴀᴍɪʟ࿐", show_alert=True)
+
+    elif query.data == "tinfo":
+        await query.answer("ᴛʜɪs ғᴜɴᴄᴛɪᴏɴ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ Sʜᴀᴍɪʟ࿐", show_alert=True)
 
         
     elif query.data == "start":                        
         buttons = [[
             InlineKeyboardButton("× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("🔍 sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("ᴍᴏᴠɪᴇ ɪɴғᴏ", url="https://t.me/ML_LINKS_01")
+            InlineKeyboardButton("🔍 sᴇᴀʀᴄʜ", callback_data="ss"), 
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", callback_data="kd_cnl")
             ],[      
             InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
@@ -1138,7 +1141,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )    
+        ) 
+      )
+    elif query.data == "kd_cnl":
+            cnlbtn = [[
+                      InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/UniverselFilmsGroup'),
+                      InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://t.me/ML_LINKS_01')
+                     ], [
+                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/CEO_shazbots'),
+                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/RamananUpdates')
+                     ], [
+                      InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+                     ]]
+            reply_markup = InlineKeyboardMarkup(cnlbtn)
+            await query.message.edit_text(
+                text=""⍟ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs Mᴏᴅᴜʟᴇ ⍟
+
+🎬 Cᴏᴍᴘʟᴇᴛᴇ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛɪɴɢ Gʀᴏᴜᴘ.
+🚦 Aʟʟ Lᴀɴɢᴜᴀɢᴇs Mᴏᴠɪᴇs & Sᴇʀɪᴇs.
+🗣️ Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ.
+📢 Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ."""",
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )   
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
@@ -1352,7 +1377,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 🎬〄 {search} 〄🎬 ', url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton(f' 〄  {search}  〄 ', url=f"https://t.me/{temp.U_NAME}")
         ]
     )
     btn.insert(1, 
