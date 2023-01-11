@@ -1,5 +1,5 @@
 class script(object):   
-    HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """ """
 
     ABOUT_TXT = """╭━━━━━━━❰  ᴏꜰꜰɪᴄɪᴀʟ ʙᴏᴛ ❱ ━━━━━━━➣
 ┣⬡ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/CEO_shazbots>𝙲𝙴𝙾</a>
