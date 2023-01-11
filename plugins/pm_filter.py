@@ -1138,7 +1138,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         ) 
-      )
     elif query.data == "kd_cnl":
             cnlbtn = [[
                       InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/UniverselFilmsGroup'),
@@ -1159,7 +1158,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 📢 Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ."""",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
-            )   
+        )   
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
