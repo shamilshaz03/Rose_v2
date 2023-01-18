@@ -221,6 +221,11 @@ async def next_page(bot, query):
         ]
     )
     btn.insert(1, 
+        [
+            InlineKeyboardButton(f' ⚡𝐇𝐃 𝐌𝐎𝐕𝐈𝐄𝐒 𝐎𝐍𝐋𝐘⚡ ', url=f"https://t.me/{temp.U_NAME}")
+        ]
+    )
+    btn.insert(2, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
@@ -1376,6 +1381,11 @@ async def auto_filter(client, msg, spoll=False):
         ]
     )
     btn.insert(1, 
+        [
+            InlineKeyboardButton(f' ⚡𝐇𝐃 𝐌𝐎𝐕𝐈𝐄𝐒 𝐎𝐍𝐋𝐘⚡ ', url=f"https://t.me/{temp.U_NAME}")
+        ]
+    )
+    btn.insert(2, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
